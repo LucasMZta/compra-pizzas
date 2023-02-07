@@ -23,6 +23,8 @@ function generateCat() {
 
     queryA('.categories span').forEach((cat)=>{
         cat.addEventListener('click', (e)=>{
+            query('.categories span.selected').classList.remove('selected');
+            e.target.classList.add('selected');
             filterType = e.target.getAttribute('data-type');
             query('.pizza-area').innerHTML = '';
             listItems();
@@ -139,15 +141,6 @@ query('.pizzaInfo--qtmais').addEventListener('click', () => {
     query('.pizzaInfo--qt').innerHTML = modalQt;
 });
 
-// //um foreach com o selectorAll para percorrer os 3 diferentes tamanhos de pizzas para adc a class no tamanho clicado
-// queryA('.pizzaInfo--size').forEach((size, sizeIndex) => {
-//     console.log(size);
-//     size.addEventListener('click', (e) => {
-//         query('.pizzaInfo--size.selected').classList.remove('selected');
-//         e.target.classList.add('selected');
-//     });
-// });
-
 //ação de adicionar a pizza ao clicar em "Adicionar ao Carrinho"
 query('.pizzaInfo--addButton').addEventListener('click', () => {
     //reunir as informações de: qual a pizza, o tamanho selecionado e a quantidade de pizzas
@@ -165,6 +158,7 @@ query('.pizzaInfo--addButton').addEventListener('click', () => {
             id: pizzaJson[modalKey].id,
             type: pizzaJson[modalKey].type,
             size: size,
+            sizeDesc: pizzaJson[modalKey].sizes[size],
             qt: modalQt
         });
     };
@@ -194,29 +188,30 @@ function updateCart() {
             let pizzaItemSize = '';
             switch (cart[i].size) {
                 case 0:
-                    if (cart[i].type === 'bebidas') {
-                        pizzaItemSize = '600ml';
-                    } else {
+                    if (cart[i].type === 'pizzas') {
                         pizzaItemSize = 'P';
+                    } else {
+                        pizzaItemSize = cart[i].sizeDesc;
                     }
                     break;
                 case 1:
-                    if (cart[i].type === 'bebidas') {
-                        pizzaItemSize = '1,5L';
-                    } else {
+                    if (cart[i].type === 'pizzas') {
                         pizzaItemSize = 'M';
+                    } else {
+                        pizzaItemSize = cart[i].sizeDesc;
                     }
                     break;
                 case 2:
-                    if (cart[i].type === 'bebidas') {
-                        pizzaItemSize = '2L';
-                    } else {
+                    if (cart[i].type === 'pizzas') {
                         pizzaItemSize = 'G';
+                    } else {
+                        pizzaItemSize = cart[i].sizeDesc;
                     }
                     break;
                 default:
                     pizzaItemSize = 'null';
             }
+            
             cartItem.querySelector('.cart--item-nome').innerHTML = `${pizzaItem.name} (${pizzaItemSize})`;
             cartItem.querySelector('.cart--item--qt').innerHTML = cart[i].qt;
             query('.cart--details .subtotal span:last-child').innerHTML = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;

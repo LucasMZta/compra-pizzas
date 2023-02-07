@@ -159,6 +159,9 @@ h1, h2 {
 .categories span:hover{
     background-color: #32a345;
 }
+.categories span.selected {
+    background-color: #32a345;
+}
 .categories span::first-letter {
     text-transform: uppercase;
 }

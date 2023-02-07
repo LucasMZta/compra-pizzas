@@ -8,4 +8,6 @@ let pizzaJson = [
     {id:7, type:'pizzas', name:'Chocolate', img:'images/pizza7.png', categories:['pequeno','medio','grande'], price:22.36, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
     {id:8, type:'bebidas', name:'Coca-cola Garrafa', img:'images/coca-cola.png', categories:['garrafa','garrafa','garrafa'], price:11.50, sizes:['600ml', '1,5L', '2L'], description:'Descrição do incrivel refrigerante de Coca Cola'},
     {id:9, type:'bebidas', name:'Coca-cola Lata', img:'images/coca-cola-lata.png', categories:['lata'], price:6.00, sizes:['350ml'], description:'Descrição do incrivel refrigerante de Coca Cola'},
+    {id:10, type:'bebidas', name:'Suco Maguary', img:'images/suco-maguary.png', categories:['caixa'], price:5.50, sizes:['1L'], description:'Descrição do incrivel refrigerante de Coca Cola'},
+    {id:11, type:'sobremesas', name:'Mini Churros', img:'images/mini-churros.png', categories:['porçao'], price:10.50, sizes:['10 UN'], description:'Descrição do incrivel mini churros com doce de leite'}
 ];
