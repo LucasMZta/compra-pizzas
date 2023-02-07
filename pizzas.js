@@ -1,9 +1,11 @@
 let pizzaJson = [
-    {id:1, name:'Mussarela', img:'images/pizza.png', price:20.19, sizes:['100g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
-    {id:2, name:'Calabresa', img:'images/pizza2.png', price:18.00, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
-    {id:3, name:'Quatro Queijos', img:'images/pizza3.png', price:17.45, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
-    {id:4, name:'Americana', img:'images/pizza4.png', price:19.77, sizes:['320g', '530g', '910g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
-    {id:5, name:'Sorvete', img:'images/pizza5.png', price:21.43, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
-    {id:6, name:'Moda da Casa', img:'images/pizza6.png', price:18.55, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
-    {id:7, name:'Chocolate', img:'images/pizza7.png', price:22.36, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'}
+    {id:1, type:'pizzas', name:'Mussarela', img:'images/pizza.png', categories:['pequeno','medio','grande'], price:20.19, sizes:['100g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:2, type:'pizzas', name:'Calabresa', img:'images/pizza2.png', categories:['pequeno','medio','grande'], price:18.00, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:3, type:'pizzas', name:'Quatro Queijos', img:'images/pizza3.png', categories:['pequeno','medio','grande'], price:17.45, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:4, type:'pizzas', name:'Americana', img:'images/pizza4.png', categories:['pequeno','medio','grande'], price:19.77, sizes:['320g', '530g', '910g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:5, type:'pizzas', name:'Sorvete', img:'images/pizza5.png', categories:['pequeno','medio','grande'], price:21.43, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:6, type:'pizzas', name:'Moda da Casa', img:'images/pizza6.png', categories:['pequeno','medio','grande'], price:18.55, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:7, type:'pizzas', name:'Chocolate', img:'images/pizza7.png', categories:['pequeno','medio','grande'], price:22.36, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'},
+    {id:8, type:'bebidas', name:'Coca-cola Garrafa', img:'images/coca-cola.png', categories:['garrafa','garrafa','garrafa'], price:11.50, sizes:['600ml', '1,5L', '2L'], description:'Descrição do incrivel refrigerante de Coca Cola'},
+    {id:9, type:'bebidas', name:'Coca-cola Lata', img:'images/coca-cola-lata.png', categories:['lata'], price:6.00, sizes:['350ml'], description:'Descrição do incrivel refrigerante de Coca Cola'},
 ];

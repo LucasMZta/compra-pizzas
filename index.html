@@ -5,7 +5,7 @@
     <title>Curso de JavaScript - Pizzas</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <div class="models">
@@ -30,16 +30,36 @@
     </div>
 
     
+
     <header>
         <div class="menu-openner"><span>0</span>🛒</div>
     </header>
     <main>
-        <h1>Pizzas</h1>
-        <div class="pizza-area"></div>
+        <h2>Categorias</h2>
+        <div class="categories">
+            <span data-type="all">Todos</span>
+        </div>
+        <hr>
+        <div class="pizza-area"> </div>
     </main>
     <aside>
+        <div class="menu--cart">
+            <input type="checkbox" class="menu-faketrigger" checked>
+            <div class="menu--cart--area">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+        </div>
         <div class="cart--area">
-            <div class="menu-closer">❌</div>
+            <div class="menu-closer">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <h1>Suas Pizzas</h1>
             <div class="cart"></div>
             <div class="cart--details">
@@ -71,9 +91,12 @@
                 <div class="pizzaInfo--sizearea">
                     <div class="pizzaInfo--sector">Tamanho</div>
                     <div class="pizzaInfo--sizes">
-                        <div data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+
+                        <!-- <div data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></div>
                         <div data-key="1" class="pizzaInfo--size">MÉDIO <span>--</span></div>
-                        <div data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+                        <div data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></div> -->
+
+
                     </div>
                 </div>
                 <div class="pizzaInfo--pricearea">
