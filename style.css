@@ -485,6 +485,7 @@ h1, h2 {
     }
     .pizzaWindowBody {
         width:100vw;
+        min-height: 100vh;
         display:block;
         padding:20px;
         border-radius:0;
@@ -516,7 +517,7 @@ h1, h2 {
         font-size:18px;
     }
     .pizzaInfo--addButton {
-        font-size:20px;
+        font-size:1rem;
         display:block;
         text-align:center;
         margin:30px auto;
@@ -544,6 +545,9 @@ h1, h2 {
     .categories {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .pizzaInfo--addButton {
+        padding: 1rem 1.2rem;
     }
 }
 @media (max-width: 376px) {
